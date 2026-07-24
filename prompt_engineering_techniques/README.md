@@ -110,7 +110,7 @@ Photosynthesis is when plants use sunlight to make food, like when plants use th
 - Edit the examples in the `build_prompt` function to tune the prompt for your use case.
 
 ### Project Structure
-- prompt-engineering-techniques/
+- llm-prompt-orchestration-evaluation/
   - prompt_engineering_techniques/
     - README.md
     - app.py
