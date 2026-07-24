@@ -1,14 +1,18 @@
-## Prompt Engineering Techniques
-This project demonstrates **prompt chaining** using open-source LLMs (e.g., GPT-2, Phi-2). 
-It generates a question, then an answer, then a refined answer, with validation and fallback logic at each step, using an advanced instruction-tuned model (`phi-2`).
+## LLM Prompt Orchestration and Evaluation Framework
+
+This project serves as a technical case study demonstrating LLM application design, prompt orchestration, multi-step generation workflows, and automated output validation.
+
+As project lead, I designed the prompt workflow architecture, defined validation criteria, implemented fallback strategies, and evaluated model behavior across chained LLM interactions.
+
+The framework demonstrates how structured prompting techniques can improve reliability, consistency, and quality control when building AI-powered applications.
 
 ### Features:
-- **Prompt chaining**: Multi-step reasoning where each step's output is used as input for the next (question -> answer -> refined answer).
-- **Few-shot prompt tuning**: Prompts include examples with answers to guide the model (when appropriate).
-- **Flexible validation logic**: Automated checks ensure outputs are relevant and high quality.
-- **Fallback responses**: Reliable answers are provided even if the model's output is invalid. 
-- **Debugging output**: Observe model behavior and validation at each step.
-
+- **Prompt Chaining:** Implements multi-step LLM workflows where outputs from one stage become inputs for subsequent stages (question → answer → refined answer).
+- **Few-Shot Prompt Design:** Uses examples within prompts to guide model behavior and improve output formatting.
+- **Output Validation:** Applies automated checks to evaluate relevance, quality, and adherence to expected formats.
+- **Fallback Logic:** Provides reliable responses when generated outputs fail validation criteria.
+- **LLM Behavior Analysis:** Enables inspection of intermediate outputs to evaluate model performance and improve prompt strategies.
+  
 ### Requirements
 - Google Colab with GPU runtime (required for performance) 
 - Python 3.x (pre-installed in Google Colab)
